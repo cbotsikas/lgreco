@@ -1,12 +1,14 @@
-{% include top.html %}
-<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
- {% include header.html %}
-  <div class="container">
-  <div id="content" class="clearfix row">
-    {{ content }}
-  </div>
-  </div>
-  {% include footer.html %}
-  {% include analytics.html %}
+<!DOCTYPE html>
+<html lang="{{page.lang}}" class="{{page.lang}}">
+{% include head.html %}
+<body {% if page.body_class %}class="{{ page.body_class }}" {% endif %}>
+    {% include menu.html %}
+    <div class="container">
+        <div id="content" class="clearfix row">
+            {{ content }}
+        </div>
+    </div>
+    {% include footer.html %}
+    {% include analytics.html %}
 </body>
 </html>

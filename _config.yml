@@ -1,6 +1,7 @@
 # site settings
 title: Lgreco | ΛGreco
 google_analytics_id: UA-47897501-1
+# url: "http://lgreco.eu"
 
 # standard jekyll configuration
 exclude:
@@ -8,4 +9,4 @@ exclude:
 - Gemfile.lock
 - README.md
 - "*.bat"
-
+- CNAME

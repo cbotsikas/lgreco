@@ -28,3 +28,10 @@ Open a command prompt and run the Update.bat in the root of the gh-pages branch 
 Then use the Local.bat file to run the server.
 
 Navigate to http://localhost:4000 to see your local site. 
+
+Make sure you save the files using UTF-8 without signature (otherwise jenkyll won't understand the header to parse the file).
+
+# On the translation topic
+
+We are going to use [Html Iso language for each post](http://www.w3schools.com/tags/ref_language_codes.asp).
+We will follow a technique similar to https://www.sylvaindurand.org/making-jekyll-multilingual/

@@ -1,0 +1,54 @@
+<header role="banner">
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container drop-shadow lifted">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" title="Passion for quality" href="http://lgreco.eu/welcome">Lgreco</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                {% assign menuItems=site.pages| where: "lang",page.lang | sort:"menu_order" %}
+                <ul id="menu-nav_main" class="nav navbar-nav">
+                    {% for item in menuItems %}
+                    <li class="menu-item {% if page.name == item.name %}active{% endif %}">
+                        <a href="{{item.url}}">{{item.menu_text}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul id="menu-nav_lang" class="menu">
+                    {% assign versions=site.pages|where:"name",page.name %}
+                    {% for ver in versions %}
+                    {% if ver.lang != page.lang %}
+                    {% assign foundTranslation = "found" %}
+                    <li class="lang-{{ver.lang}}">
+                        <a href="{{ver.url}}" hreflang="{{vel.lang}}">
+                            {% if ver.lang == "en" %}
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English" />
+                            {% else %}
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAF5SURBVHjaYuS1P8rAwHBimgCQNMl4x/CP8fuvvwy//oHRHyj5A4jAIv//AAQQC1Cdk4mAlpbW////XUyvM/z/v6ZT4/9/hv9ACRAFwSDw7z/Dg0fPAAKI8dGjR7KysiBxMAAyjp5/D5T7B1TxD6zuH5TNycF0eNcTgABigSiCqwaSF25///vv35+////+BZF//vz/A+T//S8kwFI/5QpAADGyWx92Mxfa2KMJVO2UdQVo0rYJWlBXMECdArGJiYnp1q1HAAHE8ucXzI0QN/z775Zz5R/EJf/+QxFI+D8PJ8uFQ3cBAojxxYs3IiICSAYiM/7BMdC9QBvu3XsIEEAs6w99sdBl/vbz33+YSf8hZsMcA1QMYXBxMB/Z9QUggFgOnnmhJMP74cuvv0Bf/gN5FM74B+ECPfwPJCLEy9q56SZAADHevP9RVIgd5A5I8IGdwwD1KMKFDCC/MJw6ewsggBgZxDdDI/LnPwaGPxjoHxj9AQc7iAQIMADrG2tQp2zGfgAAAABJRU5ErkJggg==" title="Ελληνικά" alt="Ελληνικά" />
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    {% if foundTranslation == null %}
+                        {% if page.lang == "en" %}
+                        <li class="lang-el">
+                            <a href="{{site.url}}el/" hreflang="el">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAF5SURBVHjaYuS1P8rAwHBimgCQNMl4x/CP8fuvvwy//oHRHyj5A4jAIv//AAQQC1Cdk4mAlpbW////XUyvM/z/v6ZT4/9/hv9ACRAFwSDw7z/Dg0fPAAKI8dGjR7KysiBxMAAyjp5/D5T7B1TxD6zuH5TNycF0eNcTgABigSiCqwaSF25///vv35+////+BZF//vz/A+T//S8kwFI/5QpAADGyWx92Mxfa2KMJVO2UdQVo0rYJWlBXMECdArGJiYnp1q1HAAHE8ucXzI0QN/z775Zz5R/EJf/+QxFI+D8PJ8uFQ3cBAojxxYs3IiICSAYiM/7BMdC9QBvu3XsIEEAs6w99sdBl/vbz33+YSf8hZsMcA1QMYXBxMB/Z9QUggFgOnnmhJMP74cuvv0Bf/gN5FM74B+ECPfwPJCLEy9q56SZAADHevP9RVIgd5A5I8IGdwwD1KMKFDCC/MJw6ewsggBgZxDdDI/LnPwaGPxjoHxj9AQc7iAQIMADrG2tQp2zGfgAAAABJRU5ErkJggg==" title="Ελληνικά" alt="Ελληνικά" />
+                            </a>
+                        </li>
+                        {%else%}
+                        <li class="lang-en">
+                            <a href="{{site.url}}" hreflang="en">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English" />
+                            </a>
+                        </li>
+                        {% endif %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
