@@ -5,6 +5,5 @@ call gem update
 call gem clean
 call gem install bundler
 call gem install jekyll
-call gem install jekyll-import
 @REM install missing dependencies
 bundle install
