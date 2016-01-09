@@ -1,0 +1,11 @@
+# site settings
+title: Lgreco | ΛGreco
+google_analytics_id: UA-47897501-1
+
+# standard jekyll configuration
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- "*.bat"
+
