@@ -511,13 +511,7 @@ a {
         margin-bottom: 5px;
     }
 
-        #main .productslist .product img.wp-post-image,
-        #main .productCategory .product img.wp-post-image,
-        #main .productslist .category img.wp-post-image,
-        #main .productCategory .category img.wp-post-image {
-            -webkit-box-shadow: 0 3px 5px;
-            box-shadow: 0 3px 5px;
-        }
+
 
 .zoomImage {
     display: inline-block;
@@ -540,11 +534,12 @@ a {
         bottom: 0;
     }
 
-    .zoomImage .wp-post-image {
+    .zoomImage img {
         -webkit-box-shadow: 0 5px 10px;
         box-shadow: 0 5px 10px;
         margin-bottom: 10px;
     }
+
 
 .wineproperty .propertyImage {
     background-repeat: no-repeat;
