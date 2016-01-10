@@ -5,15 +5,17 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                     <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" title="Passion for quality" href="http://lgreco.eu/welcome">Lgreco</a>
+                <a class="navbar-brand" title="Passion for quality" href="/">Lgreco</a>
             </div>
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 {% assign menuItems=site.pages| where: "lang",page.lang | sort:"menu_order" %}
                 <ul id="menu-nav_main" class="nav navbar-nav">
                     {% for item in menuItems %}
+                    {% unless item.menu_text == null %}
                     <li class="menu-item {% if page.name == item.name %}active{% endif %}">
                         <a href="{{item.url}}">{{item.menu_text}}</a>
                     </li>
+                    {% endunless %}
                     {% endfor %}
                 </ul>
                 <ul id="menu-nav_lang" class="menu">

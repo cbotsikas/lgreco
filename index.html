@@ -6,8 +6,21 @@ menu_order: 0
 lang: en
 html_title: Welcome
 ---
-<div id="main" class="col-sm-12 clearfix" role="main">
-    <article class="clearfix" role="article">
+<div id="main" class="clearfix" role="main">
+    {% include homeslideshow.html %}
+    <div id="searchhome">
+        <form action="http://lgreco.eu/el/" method="get" class="form-inline">
+            <fieldset>
+                <div class="input-group">
+                    <input type="text" name="s" id="search" placeholder="Search" value="" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn searchbg"></button>
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <article class="col-sm-12 clearfix" role="article">
         <div class="row">&nbsp;</div>
         <section class="row post_content">
             <div class="col-sm-12">
@@ -15,7 +28,9 @@ html_title: Welcome
                 <p style="text-align: left;">Our main and primary objective is to promote and export Greek products abroad.</p>
                 <p style="text-align: left;">Therefore our products catalogue consists of the finest and essential complements of the Mediterranean diet, Extra Virgin Olive Oil, our exceptional wine flavors, Harah wines and our G old honey.</p>
                 <p style="text-align: left;">Feel free and take a look on our products and download our online catalogues from the products section.</p>
-                <p style="text-align: left;">For more informations please fill the form in the <a href="{{ site.url }}/contact.html">contact us</a> section.</p>
+                <p style="text-align: left;">
+                    For more informations please fill the form in the <a href="{{ site.url }}/contact.html">contact us</a> section.
+                </p>
             </div>
         </section>
     </article>
