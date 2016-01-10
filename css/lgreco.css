@@ -42,6 +42,8 @@ a {
     padding-top: 66px;
 }
 
+
+
 body:after {
     /* Quick loading hover images */
     content: url(zoom_icon.png) url(search_hover.png);
@@ -126,6 +128,11 @@ body:after {
         text-indent: -9999px;
         margin: 5px 0;
     }
+
+    /* Fix lightbox to go abit up because of the lifted corners fix*/
+#lightbox {
+    margin-top: -30px;
+}
 
 .post-thumbnail {
     text-align: center;
