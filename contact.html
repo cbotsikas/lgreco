@@ -5,6 +5,7 @@ menu_text: Contact us
 menu_order: 20
 lang: en
 html_title: Contact us
+permalink: /contact/
 ---
 <div id="main" class="col-sm-12 clearfix" role="main">
     <article class="clearfix" role="article">
@@ -13,7 +14,7 @@ html_title: Contact us
                 <div class="row contactform">
                     <div class="col-md-6">
                         <div class="page-header"><h2>Contact Info</h2></div>
-                        <div id="contact-map" data-icon="{{site.url}}content/mapIcon.png"></div>
+                        <div id="contact-map" data-icon="{{site.url}}/content/mapIcon.png"></div>
                         <br>
                         <strong id="map_header">GH. L GRECO LTD</strong>
                         <br>
@@ -34,7 +35,7 @@ html_title: Contact us
                         </div>
                         <div role="form">
                             <form name="" action="//formspree.io/lgreco.eu@gmail.com" method="post" id="commentForm">
-                                <input type="hidden" name="_next" value="{{site.url}}/thanks.html" />
+                                <input type="hidden" name="_next" value="{{site.url}}/contact/thanks" />
                                 <div class="form-group">
                                     <input type="text" name="name" value="" size="40" class="form-control smaller" aria-required="true" aria-invalid="false" placeholder="Name:" required="">
                                 </div>
