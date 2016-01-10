@@ -1,0 +1,60 @@
+---
+layout: bare
+name: contact
+menu_text: Contact us
+menu_order: 20
+lang: en
+html_title: Contact us
+---
+<div id="main" class="col-sm-12 clearfix" role="main">
+    <article class="clearfix" role="article">
+        <section class="post_content row">
+            <span class="col-sm-12">
+                <div class="row contactform">
+                    <div class="col-md-6">
+                        <div class="page-header"><h2>Contact Info</h2></div>
+                        <div id="contact-map" data-icon="{{site.url}}content/mapIcon.png"></div>
+                        <br>
+                        <strong id="map_header">GH. L GRECO LTD</strong>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <strong>Address:</strong>
+                            </div>
+                            <div id="map_content" class="col-xs-10">Efesou 9 Paralimni, Cyprus, 5280</div>
+                            <div class="col-xs-2"><strong>Email:</strong></div>
+                            <div class="col-xs-10">
+                                <a title="info@lgreco.eu" href="mailto:info@lgreco.eu">info@lgreco.eu</a>
+                            </div>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="page-header">
+                            <h2>Contact form</h2>
+                        </div>
+                        <div role="form">
+                            <form name="" action="//formspree.io/lgreco.eu@gmail.com" method="post" id="commentForm">
+                                <input type="hidden" name="_next" value="{{site.url}}/thanks.html" />
+                                <div class="form-group">
+                                    <input type="text" name="name" value="" size="40" class="form-control smaller" aria-required="true" aria-invalid="false" placeholder="Name:" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" size="40" class="form-control smaller" aria-required="true" aria-invalid="false" placeholder="Email:" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="_subject" value="" size="40" class="form-control smaller" aria-required="true" aria-invalid="false" placeholder="Subject:" required="">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" cols="40" rows="10" class="form-control" aria-invalid="false" placeholder="Message:" required=""></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Send" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </section>
+    </article>
+</div>

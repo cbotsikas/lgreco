@@ -7,6 +7,16 @@ a {
         color: #708620;
     }
 
+.btn-primary {
+    background-color: #92af2a;
+    border-color: #819a25;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #778e22;
+    border-color: #586919;
+}
+
 .input-group {
     width: 100%;
 }
@@ -37,12 +47,28 @@ a {
         padding: 5px 10px;
         word-wrap: break-word;
     }
+
+.form-control:focus {
+    border-color: #cbe29d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(203,226,157,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(203,226,157,.6);
+}
+
 /* End of overrides */
 #main {
     padding-top: 66px;
 }
 
+#contact-map {
+    width: 100%;
+    height: 250px;
+}
 
+.error {
+    color: #f00;
+    font-size: 1em;
+    display: block;
+}
 
 body:after {
     /* Quick loading hover images */
@@ -129,7 +155,7 @@ body:after {
         margin: 5px 0;
     }
 
-    /* Fix lightbox to go abit up because of the lifted corners fix*/
+/* Fix lightbox to go abit up because of the lifted corners fix*/
 #lightbox {
     margin-top: -30px;
 }
@@ -389,8 +415,7 @@ a {
      background:url(./dottedbg.jpg) repeat;
 }*/
 
-.wpcf7-text,
-.wpcf7-captchar {
+.form-control.smaller {
     width: 60%;
 }
 

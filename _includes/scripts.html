@@ -23,3 +23,11 @@
 {% if site.shareaholic_site_id %}
 <script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='{{site.shareaholic_site_id}}' data-cfasync='false' async='async'></script>
 {% endif %}
+{% if page.name == "contact.html" %}
+<script type='text/javascript' src='{{site.url}}js/jquery-validation-1.14.0/jquery.validate.min.js'></script>
+{% if page.lang == "el" %}
+<script type='text/javascript' src='{{site.url}}js/jquery-validation-1.14.0/localization/messages_el.min.js'></script>
+{% endif %}
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?language={{page.lang}}'></script>
+<script type='text/javascript' src='{{site.url}}js/contactPage.js'></script>
+{% endif %}
