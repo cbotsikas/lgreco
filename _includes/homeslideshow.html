@@ -8,19 +8,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="{{site.url}}content/slideshow/slide1.jpg" alt="">
+            <img src="{{site.url}}/content/slideshow/slide1.jpg" alt="">
         </div>
 
         <div class="item">
-            <img src="{{site.url}}content/slideshow/slide2.jpg" alt="">
+            <img src="{{site.url}}/content/slideshow/slide2.jpg" alt="">
         </div>
         <div class="item">
-            <img src="{{site.url}}content/slideshow/slide3.jpg" alt="">
+            <img src="{{site.url}}/content/slideshow/slide3.jpg" alt="">
 
         </div>
     </div>
     <div class="caption-wrap">
+        {% if page.lang == "el"%}
+        <div class="caption">Ανακαλύψτε τις ομορφιές της Ελλάδας μέσα από ένα ταξίδι γεύσεων</div>
+        {% else %}
         <div class="caption">Discover the flavors of Greece through a journey of taste.</div>
+        {% endif %}
     </div>
     <!-- Left and right controls -->
     <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

@@ -5,5 +5,43 @@ menu_text: Κεντρική
 menu_order: 0
 lang: el
 html_title: Καλως ορίσατε
+permalink: /el/
 ---
-<div id="main" class="col-sm-12 clearfix" role="main"><article id="post-24" class="clearfix post-24 page type-page status-publish hentry" role="article"><div class="row">&nbsp;</div> <section class="row post_content"> <span class="col-sm-12"><p style="text-align: left;"><strong>Σας καλωσορίζουμε στον δικτυακό τόπο της GH. LGRECO LTD η οποία δραστηριοποιείται στο χώρο των εξαγωγών με κύριο και πρωταρχικό της στόχο την εξαγωγή ελληνικών προϊόντων στο εξωτερικό.</strong></p><p style="text-align: left;"><strong>Προς αυτό τον σκοπό επιλέξαμε τρία από τα πιο βασικά στοιχεία της Μεσογειακής διατροφής, το εξαιρετικό παρθένο ελαιόλαδο, τα εκλεκτά κρασιά και το μέλι μας.</strong></p><p style="text-align: left;"><strong>Μπορείτε να πλοηγηθείτε στην ιστοσελίδα μας, να γνωρίσετε τα προϊόντα μας και να απολαύσετε γεύσεις και άρωμα από Ελλάδα.</strong></p><p style="text-align: left;"><strong>Για περισσότερες πληροφορίες επικοινωνήστε μαζί μας μέσα από την φόρμα <a href="http://lgreco.eu/contact-el/">επικοινωνίας</a>.</strong></p><div class="row" style="text-align: center;"></div> </span> </section> </article></div>
+<div id="main" class="clearfix" role="main">
+    {% include homeslideshow.html %}
+    <div id="searchhome">
+        <form action="http://lgreco.eu/el/" method="get" class="form-inline">
+            <fieldset>
+                <div class="input-group">
+                    <input type="text" name="s" id="search" placeholder="{{site.t[page.lang].search}}" value="" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn searchbg"></button>
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <article class="col-sm-12 clearfix" role="article">
+        <div class="row">&nbsp;</div>
+        <section class="row post_content">
+            <div class="col-sm-12">
+                <p style="text-align: left;">
+                    Σας καλωσορίζουμε στον δικτυακό τόπο της GH. LGRECO LTD η οποία δραστηριοποιείται στο χώρο των εξαγωγών με κύριο
+                    και πρωταρχικό της στόχο την εξαγωγή ελληνικών προϊόντων στο εξωτερικό.
+                </p>
+                <p style="text-align: left;">
+                    Προς αυτό τον σκοπό επιλέξαμε
+                    τρία από τα πιο βασικά στοιχεία της Μεσογειακής διατροφής, το εξαιρετικό παρθένο ελαιόλαδο,
+                    τα εκλεκτά κρασιά και το μέλι μας.
+                </p>
+                <p style="text-align: left;">
+                    Μπορείτε να πλοηγηθείτε στην ιστοσελίδα μας, να γνωρίσετε τα προϊόντα μας και να απολαύσετε γεύσεις και άρωμα από Ελλάδα.
+                </p>
+                <p style="text-align: left;">
+                    Για περισσότερες πληροφορίες επικοινωνήστε μαζί μας
+                    μέσα από την φόρμα <a href="{{ site.url }}/el/contact/">επικοινωνίας</a>.
+                </p>
+            </div>
+        </section>
+    </article>
+</div>

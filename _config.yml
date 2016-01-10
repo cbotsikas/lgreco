@@ -5,6 +5,16 @@ google_analytics_id: UA-47897501-1
 shareaholic_app_id: 23126307
 shareaholic_site_id: bcf4fb9a3f70ecd99f1e09171fcf2fa1
 
+t: 
+ el:
+  company: "Λgreco"
+  moto: "Πάθος για ποιότητα"
+  search: "Αναζήτηση"
+ en:
+  company: "Lgreco"
+  moto: "Passion for quality"
+  search: "Search"
+
 # standard jekyll configuration
 exclude:
 - Gemfile
