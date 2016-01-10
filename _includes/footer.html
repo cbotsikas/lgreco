@@ -8,16 +8,10 @@
             <p class="col-xs-6 name">&copy; Lgreco</p>
             <p class="col-xs-6 description">Passion for quality</p>
         </div>
-        <div class='shareaholic-canvas' data-app-id='5061515' data-app='share_buttons' data-title='' data-link='' data-summary=''></div>
+		{% if site.shareaholic_app_id %}
+		<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='{{site.shareaholic_app_id}}'></div>
+		{% endif %}
         <div class="leftShadow"></div>
         <div class="rightShadow"></div>
     </div>
 </footer>
-<!-- Various old browser fixes -->
-<!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script> <script>window.attachEvent('onload', function() { CFInstall.check({ mode: 'overlay' }) })</script>
-<![endif]-->
-<!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
