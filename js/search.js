@@ -1,6 +1,6 @@
 ﻿// Get the settings from attributes
-var searchKey = $("#cse").attr("key");
-var lang = $("#cse").attr("lang");
+var searchKey = $("#cse").attr("data-key");
+var lang = $("#cse").attr("data-lang");
 
 google.load('search', '1', {language: lang, style: google.loader.themes.V2_DEFAULT});
 google.setOnLoadCallback(function() {
