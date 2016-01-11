@@ -1,8 +1,11 @@
 ﻿.gcsc-branding{
     display:none;
 }
+.gsc-orderby .gsc-selected-option-container{
+    width:90px!important;
+}
 .gsc-control-cse {
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
     border: 0;
     background-color: transparent;
 }
