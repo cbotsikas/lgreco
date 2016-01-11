@@ -349,6 +349,11 @@ label {
         padding-left: 25px;
     }
 }
+@media (max-width: 991px){
+    .navbar > .container {
+        padding-right: 7px;
+    }
+}
 
 strong,
 a {
@@ -757,9 +762,9 @@ body {
 
     body > .container {
         /*min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -194px;*/
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -194px;*/
         background-color: #fafafa;
     }
 

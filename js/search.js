@@ -32,11 +32,11 @@ google.setOnLoadCallback(function() {
   if (urlParams[queryParamName]) {
     customSearchControl.execute(urlParams[queryParamName]);
     $("#search").val(urlParams[queryParamName])
-	$("#menu-nav_lang a").each(function(item,index){
-		var link = $(item).attr("href");
-		// Add the query string
-		link = link + window.location.search;
-		$(item).attr("href", link);
-	});
+    $("#menu-nav_lang a").each(function(index,item){
+        var link = $(item).attr("href");
+        // Add the query string
+        link = link + window.location.search;
+        $(item).attr("href", link);
+    });
   }
 }, true);
