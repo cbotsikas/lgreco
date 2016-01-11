@@ -7,6 +7,7 @@ shareaholic_site_id: bcf4fb9a3f70ecd99f1e09171fcf2fa1
 # Get this from the url https://cse.google.com/cse/setup/basic?cx=006765593147615178379:lnmf5jvfzky
 # or the v1 codebase
 google_search: 006765593147615178379:lnmf5jvfzky
+send_contact_to: lgreco.eu@gmail.com
 
 t: 
  el:
