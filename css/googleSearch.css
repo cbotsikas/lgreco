@@ -1,4 +1,7 @@
-﻿.gsc-control-cse {
+﻿.gcsc-branding{
+    display:none;
+}
+.gsc-control-cse {
     font-family: Arial, sans-serif
     border: 0;
     background-color: transparent;
