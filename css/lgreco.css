@@ -354,7 +354,11 @@ label {
         padding-right: 7px;
     }
 }
-
+@media (max-width: 991px) and (min-width:858px){
+    body > .container{
+        width: 90%;
+    }
+}
 strong,
 a {
     font-weight: 600;
