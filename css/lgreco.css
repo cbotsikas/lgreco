@@ -349,7 +349,7 @@ label {
         padding-left: 25px;
     }
 }
-@media (max-width: 871px){
+@media (max-width: 871px) and (min-width:767px){
     .navbar > .container {
         padding-right: 7px;
     }
