@@ -1,0 +1,16 @@
+{% assign actionUrl = "/search/" %}
+{% if page.lang != "en" %}
+{% capture actionUrl %}/{{ page.lang }}{{ actionUrl }}{% endcapture %}
+{% endif %}
+<!-- Custom search box using http://stackoverflow.com/questions/2174187/google-custom-search-with-custom-search-box-and-button -->
+<form action="{{actionUrl}}" method="get" class="form-inline">
+    <fieldset>
+        <div class="input-group">
+            <input value="{{site.google_search}}" name="cx" type="hidden" />
+            <input type="text" name="q" id="search" placeholder="{{site.t[page.lang].search}}" value="" class="form-control">
+            <span class="input-group-btn">
+                <button type="submit" name="sa" class="btn searchbg"></button>
+            </span>
+        </div>
+    </fieldset>
+</form>
