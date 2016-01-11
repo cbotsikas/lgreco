@@ -35,11 +35,23 @@ Make sure you save the files using UTF-8 without signature (otherwise jenkyll wo
 
 We are going to use [Html Iso language for each post](http://www.w3schools.com/tags/ref_language_codes.asp).
 We will follow a technique similar to https://www.sylvaindurand.org/making-jekyll-multilingual/.
+We have placed all greek content in the el folder. Note that the name of the page is the same as the one from the english content.
+If you want to add support for more languages, search for the page.lang usages as some parts are hardcoded to el and en values.
+If you want to use values in the include files you can add them in the config file under the t structure.
 
-## Various scripts
+## Online services
+
+### Formspree
+
+We have used http://formspree.io/ in order to email the contact form. In order to make it work, you will have to submit a contact form and approve the sending of emails from the specific location. Don't forget both languages.
+
+### Shareaholic
 
 We have added shareaholic support. Create an account at https://shareaholic.com and get your site id. Place that in the _config.yml. Create an Inline App for your sharing buttons and set in the config the app id from the code snippet:
 ```
 <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='23126307'></div>
 ```
 
+### Google custom search
+
+Go to https://cse.google.com/cse/ and create a custom search engine. In the look and feel pick the "Two page" layout. Then in the setup tab, click on the "Search engine ID" button and copy the displayed id in your config file.
